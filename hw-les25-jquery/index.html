@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          rel="jquery">
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("#knop").click(function() {
+      var naam = $("#alfa").val();
+      var boek = $("#beta").val();
+      var film = $("#delta").val();
+      window.alert("Hallo dit is " + naam);
+      window.alert("Hallo dit is uw boek " + boek);
+      window.alert("Hallo dit is uw film " + film);
+    });});
+    </script>
+    <title>JQuery</title>
+  </head>
+
+  <body>
+    <form>
+      <input type="text" id="alfa" placeholder="Uw naam">
+      <br><br>
+      <input type="text" id="beta" placeholder="Uw favoriete boek">
+      <br><br>
+      <input type="text" id="delta" placeholder="Uw favoriete film">
+      <br><br>
+      <input id="knop" name="knop" type="button" value="Klik op deze knop">
+    </form>
+    <noscript>
+      Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+  </body>
+</html>
